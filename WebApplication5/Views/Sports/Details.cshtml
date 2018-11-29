@@ -1,0 +1,48 @@
+﻿@model WebApplication5.Models.Sport
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sport</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Team.Girls)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Team.Girls)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Soccer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soccer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Baseball)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Baseball)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rugby)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rugby)
+        </dd>
+
+    </dl>
+</div>
+
